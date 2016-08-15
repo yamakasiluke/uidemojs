@@ -38,7 +38,23 @@ var table = require('./routes/table');
 app.use('/table', table);
 var basic_style = require('./routes/basic_style');
 app.use('/basic_style', basic_style);
+// var onProxy = require('./onProxy');
 
+
+// app.post('/recycle',function(req,res){
+  
+//   res.json(fakeObject[req.body.page-1]);
+
+// });
+// app.post('/elearning/front/selectCats',function(req,res){
+  
+//   res.json(leftTop[req.body.page-1]);
+// });
+// app.get('/elearning/front/submitattacharticle',function(req,res){
+  
+//   onProxy(req,res);
+  
+// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
