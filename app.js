@@ -24,7 +24,9 @@ app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/js', express.static(path.join(__dirname, 'js')));
+app.use('/ace', express.static(path.join(__dirname, 'ace')));
 app.use('/css', express.static(path.join(__dirname, 'css')));
+app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 // app.use('/', express.static(path.join(__dirname, 'views')));
 
